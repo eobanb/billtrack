@@ -9,7 +9,7 @@ Billtrack is a small web application that consists of:
 
 ## Getting started
 
-To get started, first install and activate the WP plugin (ipm-billtrack / 'BillTrack backend'). On activation, the custom post type 'billupdates' will be generated. Start by creating a new bill post with a title, description in the post body, and two custom fields ('bill_number' and 'bill_topic'). Then, create a few child posts of the bill post to create updates, with a title, description, and tags.
+To get started, first install and activate the WP plugin (ipm-billtrack / 'BillTrack backend'). On activation, the custom post type 'billupdates' will be generated. If the post type already exists as a flat post type, it will be converted to a hierarchical post type. Start by creating a new bill post with a title, description in the post body, and two custom fields ('bill_number' and 'bill_topic'). Then, create a few child posts of the bill post to create updates, with a title, description, and tags.
 
 Next, add the file page-billtrack.php to your WP theme, and create a Page called 'Billtrack'.
 
