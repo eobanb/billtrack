@@ -1,0 +1,247 @@
+body {
+}
+
+header {
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	padding:20px;
+	background-color:#eee;
+	border-bottom:1px solid #ccc;
+-webkit-box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.4);
+box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.4);
+}
+
+h1 {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 24px;
+	text-transform:uppercase;
+	color:#444;
+	margin-bottom:12px;
+}
+
+h1 span {
+	color:#aaa;
+	text-transform:none;
+}
+
+p#version {
+	font-family: "Roboto Condensed", sans-serif;
+	font-size: 12px;
+	font-style:italic;
+	color:#999;
+	padding:20px;
+	text-align:center;
+}
+
+div#updatelist {
+	margin-top:0;
+}
+
+ul {
+	padding:170px 20px 20px 20px;
+	margin-top:20px;
+}
+
+ul li {
+	margin-bottom:20px;
+	padding-bottom:15px;
+	border-bottom: 1px dotted #ccc;
+}
+
+ul li p {
+	font-family: "Roboto Condensed", sans-serif;
+	padding-bottom: 5px;
+	font-size: .85em;
+	color:#000;
+}
+
+p.id {
+    display: none;
+}
+
+p.bill {
+    text-transform: uppercase;
+    font-weight: 700;
+    color:#660000;
+}
+
+p.bill:hover {
+	color:#666;
+	cursor:pointer;
+}
+
+p.billnum {
+	display:none;
+}
+
+/*
+p.bill:hover:after {
+	content: " More updates about this bill »";
+	color:#ccc;
+}
+*/
+p.topic {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+p.headline {
+	font-family: "Roboto", sans-serif;
+	font-size: 1.6em;
+    font-weight: 700;
+}
+
+p.date {
+	font-size: 1em;
+    font-weight: 300;
+    color:#999;
+    margin-bottom:5px;
+}
+
+p.body {
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+    font-weight: 400;
+    white-space: pre-wrap;
+}
+
+select {
+	font-family: "Roboto Condensed", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    width: 50%%;
+    border-radius:8px;
+    padding: 6px 10px;
+    background:#ccc;
+    -webkit-appearance: none;
+    border-color:#eee;
+}
+
+select#select1 {
+	margin-right:10px;
+}
+
+div#the-selects, div#search-sort {
+	width:100%;
+	margin-top:10px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+}
+
+input {
+	font-family: "Roboto Condensed", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    width:100%;
+    padding:5px;
+
+    border: 1px solid #ccc;
+    vertical-align:middle;
+}
+
+/*
+@media screen and (max-width: 960px) {
+input {
+    width: 75%;
+}
+
+select {
+	width: 47%;
+}
+}
+
+@media screen and (max-width: 680px) {
+input {
+    width: 70%;
+}
+}
+
+@media screen and (max-width: 480px) {
+input {
+    width: 58%;
+}
+}
+
+@media screen and (max-width: 320px) {
+input {
+    width: 45%;
+}
+}
+*/
+
+button {
+  font-family: "Roboto", sans-serif;
+  padding:0px 16px 0px 8px;
+  margin: 0 0 0 10px;
+  border-radius: 0px;
+  border:none;
+  display:block;
+  color:#fff;
+  text-decoration: none;
+  font-size: 0.75em;
+  line-height: 1em;
+  font-weight: bold;
+  text-align:center;
+  vertical-align:middle;
+  white-space:nowrap;
+
+}
+button:hover {
+  text-decoration: none;
+  background-color:#666;
+  cursor:pointer;
+}
+button:focus {
+  outline:none;
+}
+
+button.clear-search {
+	background-color:#999;
+	padding:0 15px 0 10px;
+}
+
+button.clear-search.active {
+	background-color:#666;
+}
+
+button.sort {
+	background-color: #660000;
+}
+
+.sort:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
+.sort.asc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:13px;
+  right:-5px;
+}
+.sort.desc:after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+  content:"";
+  position: relative;
+  top:-10px;
+  right:-5px;
+}
