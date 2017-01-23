@@ -10,7 +10,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.4.1/list.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/list.pagination.js/0.1.1/list.pagination.min.js"></script>
-	<!--list init-->
+	<!--list init, edit this-->
 	<script src="/ipbs/billtrack/"></script>
 	<!--the rest of the js-->
 	<script src="sessiontoolv4.js"></script>
@@ -34,7 +34,7 @@
 	</select>
 <!--Dropdown menu for bills-->	
 	<select id="select2" class="search" >
-	<?php echo file_get_contents('https://indianapublicmedia.org/ipbs/bills/'); ?>
+	<?php echo file_get_contents('https://indianapublicmedia.org/ipbs/bills/'); // edit this ?>
 	</select>
 </div>
 
