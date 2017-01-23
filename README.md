@@ -9,11 +9,11 @@ Billtrack is a small web application that consists of:
 
 ## Getting started
 
-1. Install and activate the WP plugin (`ipm-billtrack` / 'BillTrack backend'). On activation, the custom post type 'billupdates' will be generated. If the post type already exists as a flat post type, it will be converted to a hierarchical post type. Start by creating a new bill post with a title, description in the post body, and two custom fields ('bill_number' and 'bill_topic').
+To get started, first install and activate the WP plugin (`ipm-billtrack` / 'BillTrack backend'). On activation, the custom post type 'billupdates' will be generated. If the post type already exists as a flat post type, it will be converted to a hierarchical post type. Start by creating a new bill post with a title, description in the post body, and two custom fields ('bill_number' and 'bill_topic').
 
-2. Create a few child posts of the bill post to create updates, with a title, description, and tags.
+Then, create a few child posts of the bill post to create updates, with a title, description, and tags.
 
-3. Next, add the files `page-billtrack.php` and `page-bills.php` to your WP theme, and create two Pages, one called 'Billtrack' and the other called 'Bills'. Wordpress with automatically use the proper page templates if you use matching `page-*.php` filenames and page names.
+Next, add the files `page-billtrack.php` and `page-bills.php` to your WP theme, and create two Pages, one called 'Billtrack' and the other called 'Bills'. Wordpress with automatically use the proper page templates if you use matching `page-*.php` filenames and page names.
 
 Note that by default, the WP loop is limited to 500 bills and 500 updates for performance reasons. I suggest using a caching mechanism in conjunction with Billtrack.
 
@@ -29,9 +29,9 @@ If everything is working correctly so far and you've published at least one bill
 
 You should also be able to go to /bills/ and see a simple list of `<option>` HTML tags to populate the bill select menu.
 
-4. The last major step is to upload the billtrack-app folder to a web server with PHP. To hook this part up, edit script tag on line 14 to point to your published billtrack WP page's URL. Then, edit the PHP `file_get_contents()` function to point to your bills WP page. Both are commented with 'edit this'.
+The last major step is to upload the billtrack-app folder to a web server with PHP. To hook this part up, edit script tag on line 14 to point to your published billtrack WP page's URL. Then, edit the PHP `file_get_contents()` function to point to your bills WP page. Both are commented with 'edit this'.
 
-5. Finally, you will also want to change the option elements of topics select menu to correspond with what you've filled in the bill_topic meta field of the billupdate parent posts in WP.
+Finally, you will also want to change the option elements of topics select menu to correspond with what you've filled in the bill_topic meta field of the billupdate parent posts in WP.
 
 ## Demo / screenshot
 
