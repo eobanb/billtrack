@@ -17,7 +17,7 @@ Next, add the files `page-billtrack.php` and `page-bills.php` to your WP theme, 
 
 Note that by default, the WP loop is limited to 500 bills and 500 updates for performance reasons. I suggest using a caching mechanism in conjunction with Billtrack.
 
-If everything is working correctly so far and you've published at least one billupdate parent post (a bill) and one billupdate child post (a bill update), you should be able to visit yourWPsiteurl.example/billtrack/ and see a snippet of JS, beginning with a global variable called BillUpdateList, a jQuery init function, and an object with the following data fields:
+If everything is working correctly so far and you've published at least one billupdate parent post (a bill) and one billupdate child post (a bill update), you should be able to visit yourWPsiteurl.example/billtrack/ and see a snippet of JS (no, this is not where the interactive itself lives), beginning with a global variable called BillUpdateList, a jQuery handler, and an object with the following data fields:
 
 * `id` (the WP post ID; not used)
 * `bill` (the WP post title)
