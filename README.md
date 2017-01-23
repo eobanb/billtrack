@@ -4,7 +4,7 @@ v0.4
 Billtrack is a small web application that consists of:
 
 1. A Wordpress plugin (`ipm-billtrack`) that creates a custom hierarchical post type, 'billupdates'
-2. A pair of Wordpress template file (`page-billtrack.php` and `page-bills.php`), usable with any theme, which outputs the bill updates as a Javascript object and the bills as `<option>` elements for navigational purposes
+2. A pair of Wordpress template files (`page-billtrack.php` and `page-bills.php`), usable with any theme, which outputs the bill updates as a Javascript object and the bills as `<option>` elements for navigational purposes
 3. A CMS-independent widget (`billtrack-app`) which presents the bill updates as a web interactive, using listjs.
 
 ## Getting started
