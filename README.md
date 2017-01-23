@@ -1,11 +1,11 @@
 # Billtrack
 v0.4
 
-Billtrack is a small web application that consists of:
+Billtrack is a small web application for a reporter (or team) to publish brief updates on changes made to bills in a legislative session. The app consists of:
 
 * A Wordpress plugin (`ipm-billtrack`) that creates a custom hierarchical post type, 'billupdates'
 * A pair of Wordpress template files (`page-billtrack.php` and `page-bills.php`), usable with any theme, which outputs the bill updates as a Javascript object and the bills as `<option>` elements for navigational purposes
-* A CMS-independent widget (`billtrack-app`) which presents the bill updates as a web interactive, using listjs.
+* A CMS-independent widget (`billtrack-app`) which uses listjs to present the bill updates as a web interactive. The user can browse updates to bills (or sets of bills) by topic or by using the search field.
 
 ## Getting started
 
