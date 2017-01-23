@@ -23,7 +23,7 @@ If everything is working correctly so far, you should be able to visit yoursiteu
 * date (the WP post date)
 * body (the WP post body)
 
-Finally, upload the billtrack-app folder to a web server with PHP. To hook this part up, edit script tag on line 14 to point to your published billtrack WP page with the JS snippet.
+Finally, upload the billtrack-app folder to a web server with PHP. To hook this part up, edit script tag on line 14 to point to your published billtrack WP page's URL.
 
 A live demo can be found here:
 
