@@ -50,3 +50,9 @@ Here's a screenshot of the web interactive.
 * implement pagination if necessary/desirable
 * perhaps make bill topics select menu manageable from WP?
 * a friendlier tab-based interface to select a bill topic?
+
+## Acknowledgements
+
+* Lauren E Chapman, for proof-of-concept and UI improvements
+* Claire McInerny & Peter Balonon-Rosen, IPBS News reporters
+* Sara Neal-Estes, Managing editor for IPBS News
