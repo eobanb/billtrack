@@ -55,4 +55,4 @@ Here's a screenshot of the web interactive.
 
 * Lauren E Chapman, for proof-of-concept and UI improvements
 * Claire McInerny & Peter Balonon-Rosen, IPBS News reporters
-* Sara Neal-Estes, Managing editor for IPBS News
+* Sarah Neal-Estes, Managing editor for IPBS News
