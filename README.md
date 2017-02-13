@@ -1,5 +1,5 @@
 # Billtrack
-v0.4
+v0.5
 
 Billtrack is a small web application for a reporter (or team) to publish brief updates on changes made to bills in a legislative session. The app consists of:
 
@@ -29,9 +29,9 @@ If everything is working correctly so far and you've published at least one bill
 
 You should also be able to go to /bills/ and see a simple list of `<option>` HTML tags to populate the bill select menu.
 
-The last major step is to upload the billtrack-app folder to a web server with PHP. To hook this part up, edit script tag on line 14 to point to your published billtrack WP page's URL. Then, edit the PHP `file_get_contents()` function to point to your bills WP page. Both are commented with 'edit this'.
+The last major step is to upload the billtrack-app folder to a web server with PHP. To hook this part up, edit `$billtrackpath` and `$billspath` in `config.php` to point to your published billtrack WP page's URL and the bills WP page URL, respectively.
 
-Finally, you will also want to change the option elements of topics select menu to correspond with what you've filled in the bill_topic meta field of the billupdate parent posts in WP.
+Finally, you will also want to change the topics array (also in `config.php`) to correspond with what you've filled in the bill_topic meta field of the billupdate parent posts in WP.
 
 ## Demo / screenshot
 
