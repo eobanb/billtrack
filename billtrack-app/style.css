@@ -40,40 +40,41 @@ div#updatelist {
 	margin-top:0;
 }
 
-ul {
+ul.list {
 	padding:170px 20px 20px 20px;
 	margin-top:20px;
 }
 
-ul li {
+ul.list > li {
 	margin-bottom:20px;
 	padding-bottom:15px;
 	border-bottom: 1px dotted #ccc;
 }
 
-ul li p {
+ul.list > li p {
 	font-family: "Roboto Condensed", sans-serif;
 	padding-bottom: 5px;
-	font-size: .85em;
+	font-size: 14px;
+	line-height: 18px;
 	color:#000;
 }
 
-p.id {
+ul.list > li p.id {
     display: none;
 }
 
-p.bill {
+ul.list li p.bill {
     text-transform: uppercase;
     font-weight: 700;
     color:#660000;
 }
 
-p.bill:hover {
+ul.list li p.bill:hover {
 	color:#666;
 	cursor:pointer;
 }
 
-p.billnum {
+ul.list li p.billnum {
 	display:none;
 }
 
@@ -83,29 +84,51 @@ p.bill:hover:after {
 	color:#ccc;
 }
 */
-p.topic {
+ul.list li p.topic {
     text-transform: uppercase;
     font-weight: 300;
 }
 
-p.headline {
+ul.list li p.headline {
 	font-family: "Roboto", sans-serif;
-	font-size: 1.6em;
+	font-size: 20px;
     font-weight: 700;
 }
 
-p.date {
+ul.list li p.dateauthor {
 	font-size: 1em;
     font-weight: 300;
     color:#999;
     margin-bottom:5px;
 }
+/*
+ul.list li p.author {
+	font-size: 14px;
+	font-weight: bold;
+    color:#999;
+    margin-bottom:5px;
+}
+*/
 
-p.body {
+ul.list li div.body, ul.list li div.body p, ul.list li div.body ul {
 	font-family: "Roboto", sans-serif;
-	font-size: 1em;
+	font-size: 14px;
     font-weight: 400;
-    white-space: pre-wrap;
+    line-height: 18px;
+    color:#000 !important;
+}
+
+ul.list li div.body ul li {
+	margin-bottom:5px;
+}
+
+ul.list li div.body a {
+	color: #660000 !important;
+}
+
+ul.list li div.body ul {
+	list-style-type: square;
+	margin-left:20px;
 }
 
 select {
